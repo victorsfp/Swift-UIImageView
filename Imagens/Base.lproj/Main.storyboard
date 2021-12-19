@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Np-tx-qBq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Imagens" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="M43-Lj-hcg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swift2" translatesAutoresizingMaskIntoConstraints="NO" id="ec5-bD-mL0">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XjC-yF-xoO">
+                                <rect key="frame" x="150" y="624" width="132" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="password" title="Tela 2" imagePadding="10">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Q8s-Up-5hf" kind="show" id="e8J-5h-UT8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="M43-Lj-hcg" secondAttribute="bottom" id="E83-be-Ayq"/>
+                            <constraint firstItem="ec5-bD-mL0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M1t-YU-oCp"/>
+                            <constraint firstItem="ec5-bD-mL0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TG1-UA-RZU"/>
+                            <constraint firstItem="M43-Lj-hcg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fye-cJ-Tnc"/>
+                            <constraint firstAttribute="trailing" secondItem="M43-Lj-hcg" secondAttribute="trailing" id="mTR-Kh-I9q"/>
+                            <constraint firstItem="M43-Lj-hcg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qh1-gf-2Hb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4gR-gv-Lll">
+                        <barButtonItem key="backBarButtonItem" title="Voltar" id="6kD-e1-BYp"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031.8840579710145" y="109.82142857142857"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nIW-th-dJM">
+            <objects>
+                <viewController id="Q8s-Up-5hf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="44Z-Yp-bXd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steve" translatesAutoresizingMaskIntoConstraints="NO" id="YJU-Ju-AGC">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jiv-wT-VS0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YJU-Ju-AGC" firstAttribute="top" secondItem="44Z-Yp-bXd" secondAttribute="top" id="74d-VT-M1b"/>
+                            <constraint firstAttribute="bottom" secondItem="YJU-Ju-AGC" secondAttribute="bottom" id="Hjn-6l-bT9"/>
+                            <constraint firstAttribute="trailing" secondItem="YJU-Ju-AGC" secondAttribute="trailing" id="g2l-U1-HVO"/>
+                            <constraint firstItem="YJU-Ju-AGC" firstAttribute="leading" secondItem="44Z-Yp-bXd" secondAttribute="leading" id="i58-XQ-p6I"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VYd-my-Ptg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7jf-ex-wM8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1850.7246376811595" y="122.54464285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="B2o-Cr-OZn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Np-tx-qBq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KRn-I5-HBY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="e4H-Aq-vVv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Nz-oX-b4k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gradient" width="57" height="806"/>
+        <image name="password" width="22" height="22"/>
+        <image name="steve" width="1390" height="2120"/>
+        <image name="swift2" width="200" height="200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
